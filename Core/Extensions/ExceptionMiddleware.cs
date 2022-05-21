@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
+﻿using System.Data.SqlTypes;
 using System.Net;
-using System.Threading.Tasks;
 using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Http;
@@ -12,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Core.Extensions
 {
-    public class ExceptionMiddleware
+    public  class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
 
-        public ExceptionMiddleware(RequestDelegate next)
+        protected ExceptionMiddleware(RequestDelegate next)
         {
             _next = next;
         }
@@ -61,7 +57,7 @@ namespace Core.Extensions
                     Message = e.Message
                 }.ToString());
             }
-            else if (e.GetType() == typeof(SqlNullValueException))
+            else if (e is SqlNullValueException)
             {
                 return httpContext.Response.WriteAsync(new ErrorDetails
                 {
@@ -75,7 +71,7 @@ namespace Core.Extensions
                     Message = "Sql server kısıt hatası"
                 }.ToString());
             }
-            else if (e.GetType() == typeof(SqlException))
+            else if (e is SqlException)
             {
                 return httpContext.Response.WriteAsync(new ErrorDetails
                 {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cvxLuC437H+Cc4LWpSJ+F0GCjKMi9/72U6aq6e+ZLsoziArA4uJZ1HT4QuxEagdKUsuE58v4S8qi4RsdM+F3JQ==",
+  "dgSpecHash": "P/k1QhytXDyme1Xny+rqfppkRgAtQByrYvAbE7h8TpXV/0TnzulC5eTleb2eIIazuBv764SGBy+eAbsxB1iaDQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",

@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using FluentValidation.Results;
+﻿using FluentValidation.Results;
 
 namespace Core.Extensions
 {
     public class ValidationErrorDetails : ErrorDetails
     {
-        public IEnumerable<ValidationFailure> Errors { get; set; }
+        public IEnumerable<ValidationFailure>? Errors { get; set; }
     }
 }

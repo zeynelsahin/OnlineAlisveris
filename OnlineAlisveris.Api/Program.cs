@@ -1,6 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Business.DependecyResolvers;
+using Core.Extensions;
 using DataAccess.Concrete.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // builder.Services.AddDbContextPool<ShopOnlineContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineAlisverisConnection")));
 var app = builder.Build();
-
+app.ConfigureCustomExceptionMiddleware();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
