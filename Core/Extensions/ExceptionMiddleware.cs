@@ -12,7 +12,7 @@ namespace Core.Extensions
     {
         private readonly RequestDelegate _next;
 
-        protected ExceptionMiddleware(RequestDelegate next)
+        public ExceptionMiddleware(RequestDelegate next)
         {
             _next = next;
         }

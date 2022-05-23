@@ -41,4 +41,16 @@ public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEnti
         deletedEntity.State = EntityState.Deleted;
         context.SaveChanges();
     }
+
+    public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null)
+    {
+        await using var context = new TContext();
+        return filter == null ? await context.Set<TEntity>().ToListAsync() : await context.Set<TEntity>().Where(filter).ToListAsync();
+    }
+
+    public async Task<TEntity> GetAsync(Expression<Func<TEntity, bool>>? filter)
+    {
+        await using var context = new TContext();
+        return await context.Set<TEntity>().SingleOrDefaultAsync(filter);
+    }
 }

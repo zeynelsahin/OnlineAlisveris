@@ -11,6 +11,4 @@ public class Product: IEntity
     public decimal Price { get; set; }
     public int Qty { get; set; }
     public int CategoryId { get; set; }
-    
-    
 }

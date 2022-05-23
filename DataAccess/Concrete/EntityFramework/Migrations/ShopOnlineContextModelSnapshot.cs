@@ -102,7 +102,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductsType");
+                    b.ToTable("Products");
 
                     b.HasData(
                         new
@@ -345,6 +345,10 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("IconCSS")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -357,21 +361,25 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
+                            IconCSS = "null",
                             Name = "Beauty"
                         },
                         new
                         {
                             Id = 2,
+                            IconCSS = "null",
                             Name = "Furniture"
                         },
                         new
                         {
                             Id = 3,
+                            IconCSS = "null",
                             Name = "Electronics"
                         },
                         new
                         {
                             Id = 4,
+                            IconCSS = "null",
                             Name = "Shoes"
                         });
                 });

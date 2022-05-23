@@ -63,3 +63,13 @@ C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\obj\Debug
 C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\obj\Debug\net6.0\ref\OnlineAlisveris.Api.dll
 C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Autofac.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Business.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Core.dll
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Business.pdb
+C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Api\bin\Debug\net6.0\Core.pdb

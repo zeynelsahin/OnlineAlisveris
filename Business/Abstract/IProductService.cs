@@ -1,11 +1,17 @@
-﻿using Entities;
+﻿using Core.Utilities.Results;
+using Entities;
+using Entities.Dtos;
 
 namespace Business.Abstract;
 
 public interface IProductService
 {
-    Task<IEnumerable<Product>> GetItems();
-    Task<IEnumerable<ProductCategory>> GetCategories();
-    Task<Product> GetItem(int id);
-    Task<ProductCategory> GetCatetegory(int id);
+    Task<IDataResult<IEnumerable<Product>>> GetItems();
+    Task<IDataResult<Product>> GetById(int productId);
+    Task<IDataResult<IEnumerable<Product>>> GetByCategoryIdAsync(int categoryId);
+
+    Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesAsync();
+    Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesByCategoryIdIdAsync(int categoryId);
+    
+    
 }

@@ -15,8 +15,12 @@ public class AutofacBusinessModule: Module
 {
     protected override void Load(ContainerBuilder builder)
     {
+        //Product
         builder.RegisterType<ProductManager>().As<IProductService>();
         builder.RegisterType<EfProductDal>().As<IProductDal>();
+        //ProductCategory
+        builder.RegisterType<ProductCategoryManager>().As<IProductCategoryService>();
+        builder.RegisterType<EfProductCategoryDal>().As<IProductCategoryDal>();
 
         var assembly = Assembly.GetExecutingAssembly();
         builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions()

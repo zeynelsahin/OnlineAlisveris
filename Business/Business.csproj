@@ -16,4 +16,8 @@
       <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ValidationRules\FluentValidation" />
+    </ItemGroup>
+
 </Project>

@@ -1,10 +1,13 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities;
+using Entities.Dtos;
 
 namespace Business.Concrete;
 
-public class ProductManager: IProductService
+public class ProductManager : IProductService
 {
     private IProductDal _productDal;
 
@@ -13,23 +16,33 @@ public class ProductManager: IProductService
         _productDal = productDal;
     }
 
-    public Task<IEnumerable<Product>> GetItems()
+    public async Task<IDataResult<IEnumerable<Product>>> GetItems()
     {
-        return Task.FromResult<IEnumerable<Product>>(_productDal.GetAll());
+        var products = await _productDal.GetAllAsync();
+        return new SuccessDataResult<IEnumerable<Product>>(products, Messages.ProductsListed);
     }
 
-    public Task<IEnumerable<ProductCategory>> GetCategories()
+    public async Task<IDataResult<Product>> GetById(int productId)
     {
-        return null;
+        var product = await _productDal.GetAsync(product => product.Id == productId);
+        return new SuccessDataResult<Product>(product, Messages.ProductListed);
     }
 
-    public Task<Product> GetItem(int id)
+    public async Task<IDataResult<IEnumerable<Product>>> GetByCategoryIdAsync(int categoryId)
     {
-        return null;
+        var products = await _productDal.GetAllAsync(product => product.CategoryId == categoryId);
+        return new SuccessDataResult<IEnumerable<Product>>(products);
     }
 
-    public Task<ProductCategory> GetCatetegory(int id)
+    public async Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesAsync()
     {
-        return null;
+        var products = await _productDal.GetProductCategoriesAsync();
+        return new SuccessDataResult<IEnumerable<ProductDto>>(products,Messages.ProductsListed);
+    }
+
+    public async Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesByCategoryIdIdAsync(int categoryId)
+    {
+        var products = await _productDal.GetProductCategoriesByCategoryIdAsync(categoryId);
+        return new SuccessDataResult<IEnumerable<ProductDto>>(products, Messages.ProductsListed);
     }
 }
