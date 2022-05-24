@@ -6,6 +6,7 @@ namespace DataAccess.Abstract;
 
 public interface IProductDal: IEntityRepository<Product>
 {
-   Task<List<ProductDto>> GetProductCategoriesAsync();
-   Task<List<ProductDto>> GetProductCategoriesByCategoryIdAsync(int categoryId);
+   Task<IEnumerable<ProductDto>> GetProductCategoriesAsync();
+   Task<IEnumerable<ProductDto>> GetProductCategoriesByCategoryIdAsync(int categoryId);
+   Task<ProductDto> GetProductCategoriesByProductIdAsync(int productId);
 }

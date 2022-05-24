@@ -26,8 +26,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/DisplayError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/Products.razor]

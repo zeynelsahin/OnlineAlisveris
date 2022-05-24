@@ -11,7 +11,8 @@ public interface IProductService
     Task<IDataResult<IEnumerable<Product>>> GetByCategoryIdAsync(int categoryId);
 
     Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesAsync();
-    Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesByCategoryIdIdAsync(int categoryId);
+    Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesByCategoryIdAsync(int categoryId);
+    Task<IDataResult<ProductDto>> GetProductCategoriesByProductIdAsync(int productId);
     
     
 }

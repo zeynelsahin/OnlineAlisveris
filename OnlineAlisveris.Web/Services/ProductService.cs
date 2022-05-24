@@ -1,6 +1,4 @@
 ﻿using System.Net.Http.Json;
-using System.Text.Json.Nodes;
-using Core.Utilities.Results;
 using Entities.Dtos;
 using OnlineAlisveris.Web.Services.Contracts;
 using OnlineAlisveris.Web.Services.Models;
@@ -16,16 +14,22 @@ public class ProductService : IProductService
         _httpClient = httpClient;
     }
 
-    public async Task<List<ProductDto>> GetAllProductDto()
+    public async Task<IEnumerable<ProductDto>> GetAllProductDto()
     {
         try
         {
-            var products = await _httpClient.GetFromJsonAsync<ReturnData<List<ProductDto>>>("api/Products/GetAllProductDto");
+            var products = await _httpClient.GetFromJsonAsync<DataResult<IEnumerable<ProductDto>>>("api/Products/GetAllProductDto");
             return products.Data;
         }
         catch (Exception e)
         {
             throw e;
         }
+    }
+
+    public async Task<DataResult<ProductDto>> GetAllProductDtoByProductId(int productId)
+    {
+        var product = await _httpClient.GetFromJsonAsync<DataResult<ProductDto>>($"api/Products/GetAllProductDtoByProductId?productId=1");
+        return product;
     }
 }

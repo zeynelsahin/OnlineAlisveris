@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace OnlineAlisveris.Api.Controllers;
 
-[Route("/api/[controller]")]
+[Route("api/[controller]")]
 [ApiController]
 public class ProductsController : Controller
 {
@@ -46,7 +46,13 @@ public class ProductsController : Controller
     [HttpGet("GetAllProductDtoByCategoyId")]
     public async Task<IDataResult<IEnumerable<ProductDto>>> GetProductDtoByCategoryId(int categoryId)
     {
-        var products = await _productService.GetProductCategoriesByCategoryIdIdAsync(categoryId);
+        var products = await _productService.GetProductCategoriesByCategoryIdAsync(categoryId);
         return products;
+    }
+    [HttpGet("GetAllProductDtoByProductId")]
+    public async Task<IDataResult<ProductDto>> GetProductDtoByProductId(int productId)
+    {
+        var product = await _productService.GetProductCategoriesByProductIdAsync(productId);
+        return  product;
     }
 }

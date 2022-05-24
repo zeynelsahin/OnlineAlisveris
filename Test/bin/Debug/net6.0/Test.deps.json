@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Test/1.0.0": {
         "dependencies": {
+          "Business": "1.0.0",
           "Entities": "1.0.0"
         },
         "runtime": {
@@ -1342,6 +1343,17 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Business/1.0.0": {
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "Autofac.Extras.DynamicProxy": "6.0.1",
+          "DataAccess": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "runtime": {
+          "Business.dll": {}
+        }
+      },
       "Core/1.0.0": {
         "dependencies": {
           "Autofac": "6.3.0",
@@ -1357,6 +1369,16 @@
         },
         "runtime": {
           "Core.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+        },
+        "runtime": {
+          "DataAccess.dll": {}
         }
       },
       "Entities/1.0.0": {
@@ -2299,7 +2321,17 @@
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

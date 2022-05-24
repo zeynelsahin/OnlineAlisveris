@@ -1,9 +1,13 @@
-﻿using Core.Utilities.Results;
+﻿using System.Runtime.CompilerServices;
+
+using Entities;
 using Entities.Dtos;
+using OnlineAlisveris.Web.Services.Models;
 
 namespace OnlineAlisveris.Web.Services.Contracts;
 
 public interface IProductService
 {
-    Task<List<ProductDto>> GetAllProductDto();
+    Task<IEnumerable<ProductDto>> GetAllProductDto();
+    Task<DataResult<ProductDto>> GetAllProductDtoByProductId(int productId);
 }

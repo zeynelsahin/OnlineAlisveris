@@ -40,9 +40,15 @@ public class ProductManager : IProductService
         return new SuccessDataResult<IEnumerable<ProductDto>>(products,Messages.ProductsListed);
     }
 
-    public async Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesByCategoryIdIdAsync(int categoryId)
+    public async Task<IDataResult<IEnumerable<ProductDto>>> GetProductCategoriesByCategoryIdAsync(int categoryId)
     {
         var products = await _productDal.GetProductCategoriesByCategoryIdAsync(categoryId);
         return new SuccessDataResult<IEnumerable<ProductDto>>(products, Messages.ProductsListed);
+    }
+
+    public async Task<IDataResult<ProductDto>> GetProductCategoriesByProductIdAsync(int productId)
+    {
+        var product = await _productDal.GetProductCategoriesByProductIdAsync(productId);
+        return new SuccessDataResult<ProductDto>(product, Messages.ProductListed);
     }
 }

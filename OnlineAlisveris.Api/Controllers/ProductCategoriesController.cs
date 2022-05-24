@@ -17,14 +17,14 @@ public class ProductCategoriesController : Controller
     }
 
     [HttpGet("GetAll")]
-    async Task<IDataResult<List<ProductCategory>>> GetAll()
+    public async Task<IDataResult<List<ProductCategory>>> GetAll()
     {
         var categories = await _productCategoryService.GetAll();
         return categories;
     }
 
     [HttpGet("GetById")]
-    async Task<IDataResult<ProductCategory>> GetById(int id)
+    public async Task<IDataResult<ProductCategory>> GetById(int id)
     {
         var category = await _productCategoryService.GetById(id);
         return category;
