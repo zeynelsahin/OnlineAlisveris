@@ -1,4 +1,6 @@
-﻿namespace Business.Constants;
+﻿using Entities;
+
+namespace Business.Constants;
 
 public static class Messages
 {
@@ -69,4 +71,11 @@ public static class Messages
         public static string OrderListed = "Sipariş listelendi";
         public static string OrderNotCustomer = "Müşterinin satın aldığı ürün yok";
         public static string OrderNotEmployee = "Çalışanın sattığı ürün yok";
+        
+        public static string CartItemAdd="Sepete Eklendi";
+        public static string CartItemNotFound="Sepet bulunamadı ";
+        public static string CartItemAlreadyExists = "Sepette ekli";
+        public static string CartNotFound="Sepet numarası bulunamadı";
+        public static string CartItemListed = "Sepet listelendi";
+        
 }

@@ -1,11 +1,11 @@
 ﻿@page "/ProductDetails/{Id:int}"
 @inherits ProductDetailsBase
 
-@if (Product.Data==null)
+@if (Product.Data == null)
 {
-    <h3>Loading produt details</h3>
+    <DisplaySpinner></DisplaySpinner>
 }
-else if (Product.Success==false)
+else if (Product.Success == false)
 {
     <DisplayError ErrorMessage="@Product.Message"></DisplayError>
 }
@@ -24,6 +24,11 @@ else
                     @Product.Data.Price.ToString("C") &nbsp;(@Product.Data.Qty items in stock)
                 </b>
             </p>
+            <div>
+                <button class="btn btn-success" @onclick="() => AddToCart_Click(new CartItemToAddDto() {CartId=HardCodded.CartId,ProductId = HardCodded.ProductId,Qty = 1})">
+                    <b>Sepete Ekle</b>
+                </button>
+            </div>
         </div>
     </div>
 }

@@ -51,4 +51,6 @@ public class ProductManager : IProductService
         var product = await _productDal.GetProductCategoriesByProductIdAsync(productId);
         return new SuccessDataResult<ProductDto>(product, Messages.ProductListed);
     }
+
+
 }

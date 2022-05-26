@@ -17,7 +17,7 @@ public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEnti
         using var context = new TContext();
         return context.Set<TEntity>().SingleOrDefault(filter);
     }
-
+    
     public void Add(TEntity entity)
     {
         using var context = new TContext();
@@ -52,5 +52,13 @@ public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEnti
     {
         await using var context = new TContext();
         return await context.Set<TEntity>().SingleOrDefaultAsync(filter);
+    }
+
+    public async void AddAsync(TEntity entity)
+    {
+        await using var context = new TContext();
+        var addedEntity = context.Entry(entity);
+        addedEntity.State = EntityState.Added;
+        await context.SaveChangesAsync();
     }
 }

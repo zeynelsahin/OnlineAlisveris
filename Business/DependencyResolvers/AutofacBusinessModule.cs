@@ -21,7 +21,11 @@ public class AutofacBusinessModule: Module
         //ProductCategory
         builder.RegisterType<ProductCategoryManager>().As<IProductCategoryService>();
         builder.RegisterType<EfProductCategoryDal>().As<IProductCategoryDal>();
+        builder.RegisterType<CartItemManager>().As<ICartItemService>();
+        builder.RegisterType<EfCartItemDal>().As<ICartItemDal>();
 
+        builder.RegisterType<EfCartDal>().As<ICartDal>();
+        builder.RegisterType<CartManager>().As<ICartService>();
         var assembly = Assembly.GetExecutingAssembly();
         builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions()
         {

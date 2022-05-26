@@ -1,6 +1,8 @@
-﻿namespace Entities.Dtos;
+﻿using Core.Entities;
 
-public class CartItemToAddDto
+namespace Entities.Dtos;
+
+public class CartItemToAddDto: IEntity
 {
     public int CartId { get; set; }
     public int ProductId { get; set; }

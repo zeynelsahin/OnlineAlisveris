@@ -11,53 +11,57 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = OnlineAlisveris.Web
 build_property.RootNamespace = OnlineAlisveris.Web
-build_property.ProjectDir = C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Web\
+build_property.ProjectDir = C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\zynls\Masaüstü\Kurs\MVC\OnlineAlisveris\OnlineAlisveris.Web
+build_property.MSBuildProjectDirectory = C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/App.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/Counter.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/DisplayError.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/DisplayError.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/FetchData.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/ProductDetails.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/ProductDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/Products.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/Products.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Shared/SurveyPrompt.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/_Imports.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Pages/DisplayProducts.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/DisplayProducts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVByb2R1Y3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-tye9xfwrq3
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Shared/MainLayout.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Pages/DisplaySpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVNwaW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-kujg0087re
+
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rr8jf7iw9y
 
-[C:/Users/zynls/Masaüstü/Kurs/MVC/OnlineAlisveris/OnlineAlisveris.Web/Shared/NavMenu.razor]
+[C:/Users/zynls/Masaüstü/OnlineAlisveris/OnlineAlisveris.Web/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-l001vxeh4s

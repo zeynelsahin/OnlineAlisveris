@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YPHxX6CAbL+pQLYxsV0Eec8+rPKhLL3QA9HaThUu16LkL8ST2TIYqpz4KwH/jvF3+/q+ArBOp2gHxH8x49U4og==",
+  "dgSpecHash": "1yFb0xEW21u9vlR2BkazJez68AAsXfCBblJc7MT9RRIAYbhjSFSSQDEUFEWg3m9oehrYqcr0u9GIrRm/0pVnOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zynls\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

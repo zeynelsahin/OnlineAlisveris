@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jw3ckndJ+oWRFkYbWVWW44jihPZ6LImZgyJsZx0R0e6OjmybXZ3hQREWqH2Llz7bqeFhHc8b/hM/qi1uA/Hgkw==",
+  "dgSpecHash": "sNwUiZbK/mxMUsHsDvAwz/M6/6FME2ykLFKLhoVIubJQY1AOqe7HnaPO/AohI2RmlIMqhqnEhdQbiNvCUueR6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zynls\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

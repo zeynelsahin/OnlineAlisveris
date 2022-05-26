@@ -2304,6 +2304,22 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "Autofac.Extras.DynamicProxy": "6.0.1",
+          "DataAccess": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2324,6 +2340,21 @@
         },
         "runtime": {
           "bin/placeholder/Core.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
         }
       },
       "Entities/1.0.0": {
@@ -4557,6 +4588,22 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "Autofac.Extras.DynamicProxy": "6.0.1",
+          "DataAccess": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4577,6 +4624,21 @@
         },
         "runtime": {
           "bin/placeholder/Core.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
         }
       },
       "Entities/1.0.0": {
@@ -10552,10 +10614,20 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    },
     "Core/1.0.0": {
       "type": "project",
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
     },
     "Entities/1.0.0": {
       "type": "project",
@@ -10565,6 +10637,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Business >= 1.0.0",
       "Core >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.4",
@@ -10578,11 +10651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\OnlineAlisveris.Web\\OnlineAlisveris.Web.csproj",
+      "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\OnlineAlisveris.Web.csproj",
       "projectName": "OnlineAlisveris.Web",
-      "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\OnlineAlisveris.Web\\OnlineAlisveris.Web.csproj",
+      "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\OnlineAlisveris.Web.csproj",
       "packagesPath": "C:\\Users\\zynls\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\OnlineAlisveris.Web\\obj\\",
+      "outputPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10603,11 +10676,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj"
+            "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj"
             },
-            "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj"
+            "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj"
+            },
+            "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj"
             }
           }
         }

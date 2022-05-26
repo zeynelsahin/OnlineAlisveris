@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Business\\Business.csproj": {}
+    "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Business\\Business.csproj": {
+    "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\zynls\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Business\\obj\\",
+        "outputPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj"
+              "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj": {
+    "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\zynls\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\obj\\",
+        "outputPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -179,14 +179,14 @@
         }
       }
     },
-    "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\zynls\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -207,11 +207,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj"
+              "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj"
               },
-              "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj"
+              "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj"
               }
             }
           }
@@ -256,14 +256,14 @@
         }
       }
     },
-    "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj": {
+    "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\zynls\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -284,8 +284,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Core\\Core.csproj"
+              "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Core\\Core.csproj"
               }
             }
           }

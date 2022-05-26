@@ -1,6 +1,8 @@
-﻿namespace Entities;
+﻿using Core.Entities;
 
-public class Cart
+namespace Entities;
+
+public class Cart : IEntity
 {
     public int Id { get; set; }
     public int UserId { get; set; }

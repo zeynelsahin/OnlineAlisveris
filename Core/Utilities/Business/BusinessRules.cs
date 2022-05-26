@@ -1,20 +1,22 @@
-﻿using Core.Utilities.Results;
+﻿using Core.Entities;
+using Core.Utilities.Results;
 
 namespace Core.Utilities.Business;
 
 public class BusinessRules
 {
-    public static IResult Run(params IResult[] logics)
+    public static async Task<IResult> Run(params IResult[] logics)
     {
-        var result = new SuccessResult();
+        var result =  new SuccessResult();
         foreach (var logic in logics)
             if (!logic.Success)
-                return logic;
+                return  logic;
 
         return result;
     }
+  
 
-    public static List<IResult> RunMultiple(params IResult[] logics)
+    public static async Task<List<IResult>> RunMultiple(params IResult[] logics)
     {
         var resultList = new List<IResult>();
         foreach (var logic in logics)

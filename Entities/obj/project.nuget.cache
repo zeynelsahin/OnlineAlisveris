@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P/k1QhytXDyme1Xny+rqfppkRgAtQByrYvAbE7h8TpXV/0TnzulC5eTleb2eIIazuBv764SGBy+eAbsxB1iaDQ==",
+  "dgSpecHash": "SQkdApqq/yhgx3y+8TyEFA3DNfgWRzBS3nWxjxIRH9OvM5YQadSj7OmvsxF8V2aN2PD8qPu/zGwy/wGl9X9VBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\Kurs\\MVC\\OnlineAlisveris\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zynls\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
