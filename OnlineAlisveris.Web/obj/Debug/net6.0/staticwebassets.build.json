@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yqiYaPNmsyQ30Jk21VXVHzCfZjLs6HuwRpi1gkjVJ+Q=",
+  "Hash": "ZOxAwSXBysRSOxve1K2gXQdZXyncP4ml+11a62S10M4=",
   "Source": "OnlineAlisveris.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,57 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\MudBlazor.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\MudBlazor.css"
+    },
+    {
+      "Identity": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\staticwebassets\\MudBlazor.min.js"
+    },
     {
       "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Autofac.dll",
       "SourceId": "OnlineAlisveris.Web",
@@ -1222,6 +1273,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zynls\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\runtimes\\browser-wasm\\lib\\net6.0\\mscorlib.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MudBlazor.dll",
+      "SourceId": "OnlineAlisveris.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\lib\\net6.0\\MudBlazor.dll"
     },
     {
       "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\netstandard.dll",
@@ -7531,6 +7599,23 @@
       "OriginalItemSpec": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\netstandard.dll"
     },
     {
+      "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\obj\\Debug\\net6.0\\build-gz\\VS9xOC5a.gz",
+      "SourceId": "OnlineAlisveris.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MudBlazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MudBlazor.dll"
+    },
+    {
       "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\obj\\Debug\\net6.0\\build-gz\\VvByQJNI.gz",
       "SourceId": "OnlineAlisveris.Web",
       "SourceType": "Computed",
@@ -8872,6 +8957,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\wwwroot\\js\\ShoppingCartFunction.js",
+      "SourceId": "OnlineAlisveris.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/ShoppingCartFunction.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ShoppingCartFunction.js"
     },
     {
       "Identity": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\wwwroot\\sample-data\\weather.json",

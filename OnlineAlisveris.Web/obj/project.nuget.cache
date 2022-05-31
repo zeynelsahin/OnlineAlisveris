@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vCE7GJD8qA7HXgiRbLwHmmR/Z+R9j6avtRqrnFCe2MwXJVuQk71590WZ8hrgWQ4afiJlF09gpfO9LxR/DsTv1A==",
+  "dgSpecHash": "YF0vHKl8vU/b6vPu3ogTwHPH6W/8yiiytCMt8GlZaJyEdJ2gcT6mZumVli9CY77gGOp7wIs5kqWdUlFKIKpp0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\OnlineAlisveris.Web.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,7 @@
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\zynls\\.nuget\\packages\\mudblazor\\6.0.11-dev.3\\mudblazor.6.0.11-dev.3.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",

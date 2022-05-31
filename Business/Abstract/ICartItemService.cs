@@ -12,11 +12,12 @@ public interface ICartItemService
     Task<IDataResult<IEnumerable<CartItem>>> GetAllByUserIdAsync(int userId);
     Task<IDataResult<IEnumerable<CartItemDto>>> GetCartItemProductsAsync();
     Task<IDataResult<IEnumerable<CartItemDto>>> GetCartItemProductsByCartIdAsync(int cartId);
+    Task<IDataResult<IEnumerable<CartItemDto>>> GetCartItemProductsByUserIdAsync(int userId);
 
     //
     
     Task<IResult> AddItem(CartItemToAddDto cartItemToAddDto);
-    Task<IResult> UpdateQty(int id , CartItemQtyUpdateDto cartItemQtyUpdateDto);
+    Task<IResult> UpdateQty(CartItemQtyUpdateDto cartItemQtyUpdateDto);
     Task<IResult> DeleteItem(int id);
     
    

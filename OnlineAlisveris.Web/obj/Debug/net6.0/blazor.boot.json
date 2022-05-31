@@ -55,6 +55,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-9fmAKBOzIs7ySpwatFoAUhMgaJtTQvGN5+TArCHX9QE=",
       "Microsoft.Net.Http.Headers.dll": "sha256-P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=",
       "Microsoft.Win32.SystemEvents.dll": "sha256-56MWX7GCuiW+O0EPzkUo0jj6T\/mhpVB6x+UFQtaS2qE=",
+      "MudBlazor.dll": "sha256-\/bB1bduoCeo5nnbGZMlvg8pvi6+pP89LGI1hVlxB3k4=",
       "System.Configuration.ConfigurationManager.dll": "sha256-Rmj4lST8tNcZUOCtfg1W5eXbLHDjla1J99tqgWTMUNY=",
       "System.Drawing.Common.dll": "sha256-E+\/s4U4Xt\/iFr\/+Dd7ZSqXXAOJZKgnOAW4C5r7OPcHc=",
       "System.IdentityModel.Tokens.Jwt.dll": "sha256-wsIz7OxubpaiB78i8OuZXwN55yQOmOkebz2vI9A07FM=",
@@ -229,21 +230,21 @@
       "mscorlib.dll": "sha256-ghlJNtzzYlKIliGPuf0A0Yu6dmLycSx3F9uyeddFb\/g=",
       "netstandard.dll": "sha256-qpOz\/RBwhlIYfaE2GDEmjiproxkvSf2b9GeqHxvH+lg=",
       "System.Private.CoreLib.dll": "sha256-sfzSZ3YKC2rpF77TVOKLuPgQag93QXr9U4AUc9d\/LKA=",
-      "Business.dll": "sha256-xTS7C2rtZCkQi8Gsd4eKrkeOk6rNzqEKm5OJv3Mtt3k=",
-      "Core.dll": "sha256-lsFbnqjMCKecTTARpmdmu1iw13MS4a0XsR6wMB19VJw=",
-      "DataAccess.dll": "sha256-hvSYpoxoqQcaoDLrnrewH2+gp5i568uD8v3C1zptdro=",
-      "Entities.dll": "sha256-EkVJT2nrTdqO2c3t8\/pvqhpY24snPoRtJfuvF2s2qnU=",
-      "OnlineAlisveris.Web.dll": "sha256-88O\/pYyVcHme0K1jngTS6L6982\/wh3fVRWr03TnJlFA="
+      "Business.dll": "sha256-XYr9toz9qOllG6XF3LPS7yK1IufycC8fcs\/o2WHJa1c=",
+      "Core.dll": "sha256-AmgNFUO7H9JQHcG2HR4LgbUr\/LMCcY0RHdw8IwVG6Vo=",
+      "DataAccess.dll": "sha256-b9RAEfMZ+OaPf9LmQlb7+ymtDkadWBdqg5lu4qwPmVM=",
+      "Entities.dll": "sha256-WgMCSIOk92MKe+SfA76i0kPTIFVxExzZQDGs6LNcSDE=",
+      "OnlineAlisveris.Web.dll": "sha256-bHfS4LRx9qDSiFa56\/wkJJLWHbwJKWVY5Cntc5BTWp8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Business.pdb": "sha256-6FZHWuXEvWk+OQqulhycPIa2Z8zqhy28Gtskq8LeIbA=",
-      "Core.pdb": "sha256-vdO7kzBU75BbsSTpJWx85UU+80v+Z59vaN1\/Mpoer0c=",
-      "Entities.pdb": "sha256-rcIKVW\/q5dGiNWn7NKmjSAAOgUNpyFRcD6QUWAfkTRk=",
-      "DataAccess.pdb": "sha256-1uYzYazYGR1d2olg2uLH6sZ9LKKGYa0LERcJzwJJA34=",
-      "OnlineAlisveris.Web.pdb": "sha256-hyNPcoM0RtUMNicO7+BMPbmLVQrC\/BtZ7b2Zwt17Xxk="
+      "Business.pdb": "sha256-rsOGb0TJdSFnshYMpIDyJDnMQbbnUAjmfZpX1Rbn4+M=",
+      "Core.pdb": "sha256-LSNwcJSUvaBAmEljLmeBSkWX\/SZqMfbLnNYwvXZWzXU=",
+      "Entities.pdb": "sha256-04Xari7n8FyH\/yH2TcWoPCbvpvoBBvGNYhKGm3Cx5zE=",
+      "DataAccess.pdb": "sha256-S64lOI59Q8SvPr6O3oKO7NMGvDttjptvxjWX\/fRYeVs=",
+      "OnlineAlisveris.Web.pdb": "sha256-iJUQ7gBG39S06wIqcyJpMvqrKnYB2jQyRxTl45WLGcg="
     },
     "runtime": {
       "dotnet.6.0.5.bz14beyl5a.js": "sha256-783uOt0jgblQfP6Yz5TJeuW2xxtl6UHZQPngZtCz79U=",

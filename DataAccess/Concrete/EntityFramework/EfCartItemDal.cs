@@ -29,7 +29,7 @@ public class EfCartItemDal : EfEntityRepositoryBase<CartItem, ShopOnlineContext>
         await using var context = new ShopOnlineContext();
         var result = (from cart in context.Carts
             join cartItem in context.CartItems on cart.Id equals cartItem.CartId
-            where cart.Id==id
+            where cartItem.Id==id
             select new CartItem()
             {
                 Id = cartItem.Id,
@@ -61,14 +61,33 @@ public class EfCartItemDal : EfEntityRepositoryBase<CartItem, ShopOnlineContext>
     public async Task<IEnumerable<CartItemDto>> GetCartItemProductsByCartIdAsync(int cartId)
     {
         await using var context = new ShopOnlineContext();
-        var result = (from cartItem in context.CartItems join product in context.Products on cartItem.ProductId equals product.Id where cartItem.Id==cartId select new CartItemDto()
+        var result = (from cartItem in context.CartItems join product in context.Products on cartItem.ProductId equals product.Id where cartItem.CartId==cartId select new CartItemDto()
         {
             Id = cartItem.Id,
             CartId = cartItem.CartId,
             Price = product.Price,
             ProductDesciption = product.Description,
             ProductId = product.Id,
-            Qty = product.Qty,
+            Qty = cartItem.Qty,
+            ProductImageURL = product.ImageURL,
+            ProductName = product.Name,
+            TotalPrice = product.Price*cartItem.Qty
+        }).ToListAsync();
+        return await result;
+    }
+
+    public async Task<IEnumerable<CartItemDto>> GetCartItemProductByUserIdAsync(int userId)
+    {
+        
+        await using var context = new ShopOnlineContext();
+        var result = (from cartItem in context.CartItems join product in context.Products on cartItem.ProductId equals product.Id  where cartItem.CartId==1 select new CartItemDto()
+        {
+            Id = cartItem.Id,
+            CartId = cartItem.CartId,
+            Price = product.Price,
+            ProductDesciption = product.Description,
+            ProductId = product.Id,
+            Qty = cartItem.Qty,
             ProductImageURL = product.ImageURL,
             ProductName = product.Name,
             TotalPrice = product.Price*cartItem.Qty

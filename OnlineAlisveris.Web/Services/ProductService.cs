@@ -29,7 +29,7 @@ public class ProductService : IProductService
 
     public async Task<DataResult<ProductDto>> GetAllProductDtoByProductId(int productId)
     {
-        var product = await _httpClient.GetFromJsonAsync<DataResult<ProductDto>>($"api/Products/GetAllProductDtoByProductId?productId=1");
+        var product = await _httpClient.GetFromJsonAsync<DataResult<ProductDto>>($"api/Products/GetAllProductDtoByProductId?productId={productId}");
         return product;
     }
 }

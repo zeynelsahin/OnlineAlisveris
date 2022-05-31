@@ -22,7 +22,7 @@ public class CartItemController : Controller
     [NonAction]
     private async Task<IActionResult> Dondur(IResult result)
     {
-        if (result.Success) return Ok(result);
+        if (result.Success) return  Ok(result);
         return BadRequest(result);
     }
 
@@ -40,7 +40,7 @@ public class CartItemController : Controller
         return await Dondur(result);
     }
     [HttpPost("Add")]
-    public async Task<IActionResult> Add(CartItemToAddDto cartItemToAddDto)
+    public async Task<IActionResult> Add([FromBody]CartItemToAddDto cartItemToAddDto)
     {
         var result = await _cartItemService.AddItem(cartItemToAddDto);
         return await Dondur(result);
@@ -57,5 +57,27 @@ public class CartItemController : Controller
         var result = await _cartItemService.GetCartItemProductsByCartIdAsync(cartId);
         return await Dondur(result);
     }
+    [HttpGet("GetCartItemProductsByUserId")]
+    public async Task<IActionResult> GetCartItemProductsByuserId(int userId)
+    {
+        var result = await _cartItemService.GetCartItemProductsByUserIdAsync(userId);
+        return await Dondur(result);
+    }
+    [HttpDelete("DeleteCartItemById")]
+    public async Task<IActionResult> DeleteCartItemById(int id)
+    {
+        var result = await _cartItemService.DeleteItem(id);
+        return await Dondur(result);
+    }
+
+    [HttpPut("UpdateCartItemQty")]
+    public async Task<IActionResult> UpdateCartItemQty(CartItemQtyUpdateDto cartItemQtyUpdateDto)
+    {
+        var result = await _cartItemService.UpdateQty(cartItemQtyUpdateDto);
+        return await Dondur(result);
+    }
+
+    
+        
     
 }

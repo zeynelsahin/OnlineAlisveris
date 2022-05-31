@@ -1960,3 +1960,8 @@ C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\O
 C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\refint\OnlineAlisveris.Web.dll
 C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\OnlineAlisveris.Web.pdb
 C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\ref\OnlineAlisveris.Web.dll
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\wwwroot\_framework\MudBlazor.dll
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\wwwroot\_framework\MudBlazor.dll.gz
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\MudBlazor.dll
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\build-gz\VS9xOC5a.gz
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css

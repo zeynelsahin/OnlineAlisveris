@@ -45,6 +45,12 @@ public class CartItemManager : ICartItemService
         return new SuccessDataResult<IEnumerable<CartItemDto>>(cartItemDto,Messages.CartItemListed);
     }
 
+    public async Task<IDataResult<IEnumerable<CartItemDto>>> GetCartItemProductsByUserIdAsync(int userId)
+    {
+        var cartItemDto = await _cartItemDal.GetCartItemProductByUserIdAsync(userId);
+        return new SuccessDataResult<IEnumerable<CartItemDto>>(cartItemDto,Messages.CartItemListed);
+    }
+
 
     public async Task<IResult> AddItem(CartItemToAddDto cartItemToAddDto)
     {
@@ -61,14 +67,28 @@ public class CartItemManager : ICartItemService
         return new SuccessResult(Messages.CartItemAdd);
     }
 
-    public Task<IResult> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto)
+    public async Task<IResult> UpdateQty(CartItemQtyUpdateDto cartItemQtyUpdateDto)
     {
-        return null; 
+        var item = await _cartItemDal.GetByIdAsync(cartItemQtyUpdateDto.CartItemId);
+        if (item!=null)
+        {
+            item.Qty = cartItemQtyUpdateDto.Qty;
+            _cartItemDal.Update(item);
+            return new  SuccessResult(Messages.CartItemUpdated);
+        }
+
+        return new ErrorResult(Messages.ErrorCartItemUpdated);
     }
 
-    public Task<IResult> DeleteItem(int id)
+    public async Task<IResult> DeleteItem(int id)
     {
-        return null;
+        var item = await _cartItemDal.GetByIdAsync(id);
+        if (item==null)
+        {
+            return new ErrorResult(Messages.CartItemNotFound);
+        }
+        _cartItemDal.DeleteAsync(item);
+        return new SuccessResult(Messages.CartItemDeleted);
     }
     
     private async Task<IResult> CheckIfProductCorrectToCartItemAdd(CartItemToAddDto cartItemToAddDto)

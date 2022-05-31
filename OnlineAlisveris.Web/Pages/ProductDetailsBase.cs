@@ -8,11 +8,13 @@ namespace OnlineAlisveris.Web.Pages;
 public class ProductDetailsBase : ComponentBase
 {
     [Parameter] public int Id { get; set; }
+    [Parameter] public Result Result { get; set; }
     [Inject] public IProductService ProductService { get; set; }
 
-    [Inject] public ICartService CartService { get; set; }
+    [Inject] public ICartItemService CartItemService { get; set; }
 
-    public DataResult<ProductDto> Product { get; set; } = new DataResult<ProductDto>() { Data = null, Message = null, Success = false };
+    [Inject] public NavigationManager NavigationManager { get; set; }
+    protected DataResult<ProductDto> Product { get; private set; } = new() { Data = null, Message = null, Success = false };
 
     protected override async Task OnInitializedAsync()
     {
@@ -21,7 +23,7 @@ public class ProductDetailsBase : ComponentBase
 
     protected async Task AddToCart_Click(CartItemToAddDto cartItemToAddDto)
     {
-        var cartItemDto = await CartService.Add(cartItemToAddDto);
-         
+        Result = await CartItemService.Add(cartItemToAddDto);
+        NavigationManager.NavigateTo("/ShoppingCart");
     }
 }

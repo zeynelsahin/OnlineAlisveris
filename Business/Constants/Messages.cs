@@ -77,5 +77,7 @@ public static class Messages
         public static string CartItemAlreadyExists = "Sepette ekli";
         public static string CartNotFound="Sepet numarası bulunamadı";
         public static string CartItemListed = "Sepet listelendi";
-        
+        public static string CartItemDeleted="Sepet içeriği silindi";
+        public static string CartItemUpdated= "Sepet güncellendi";
+        public static string ErrorCartItemUpdated="Sepet içeriği güncellenemedi";
 }

@@ -1,14 +1,31 @@
 ﻿@page "/"
 
-@inherits ProductBase
+@inherits ProductsBase
 
 @if (Products == null)
 {
-    <h3>Loading Products</h3>
+    <div class="row mt-3">
+        @for (int i = 0; i < 17; i++)
+        {
+            <div class="col-md-3 mb-2">
+                <div class="card">
+                    <MudSkeleton SkeletonType="SkeletonType.Rectangle" Width="%100" Height="255px"/>
+                    <div class="card-body">
+                        <MudSkeleton SkeletonType="SkeletonType.Text" Width="%60" Height="88x"/>
+                        <MudSkeleton SkeletonType="SkeletonType.Text" Width="%10" Height="88x"/>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
 }
 else
 {
-    <h3 class="mb-5">Products</h3>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     var productCount = Products.Count();
 
     if (productCount > 0)

@@ -61,4 +61,12 @@ public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEnti
         addedEntity.State = EntityState.Added;
         await context.SaveChangesAsync();
     }
+
+    public async void DeleteAsync(TEntity entity)
+    {
+        await using var context = new TContext();
+        var deletedEntity = context.Entry(entity);
+        deletedEntity.State = EntityState.Deleted;
+        await context.SaveChangesAsync();
+    }
 }

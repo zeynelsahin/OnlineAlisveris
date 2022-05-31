@@ -1,17 +1,40 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
+<MudThemeProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Size="Size.Medium" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
+        
+        <MudText>Online Alışveriş</MudText>&nbsp;&nbsp;
+        <MudIconButton Icon="@Icons.Material.Outlined.Add" Color="Color.Inherit"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.Edit" Color="Color.Inherit"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.Remove" Color="Color.Inherit"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.Settings" Color="Color.Inherit"/>
+        <MudSpacer/>
+        <MudIconButton Icon="@Icons.Material.Outlined.Notifications"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.PushPin"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.PeopleAlt"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.MoreVert" Color="Color.Inherit"/>
+    </MudAppBar>
+     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu/>
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.ExtraLarge">
             @Body
-        </article>
-    </main>
-</div>
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+}

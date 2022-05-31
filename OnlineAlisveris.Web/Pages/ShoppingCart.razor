@@ -1,0 +1,67 @@
+﻿@page "/ShoppingCart"
+@inherits ShoppingCartBase
+@inject ISnackbar Snackbar
+
+@if (CartItems.Data == null)
+{
+    <DisplaySpinner></DisplaySpinner>
+}
+else if (CartItems.Success == false)
+{
+    <DisplayError ErrorMessage=@CartItems.Message></DisplayError>
+}
+else
+{
+    @if (CartItems.Data.Any())
+    {
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="row mb-5">
+            <div class="col-md-9">
+                @foreach (var item in CartItems.Data)
+                {
+                    <div class="row md-4">
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="col-md-4">
+                            <img src="@item.ProductImageURL" width="300" class="img-thumbnail"/>
+                        </div>
+                        <div class="col-md-8">
+                            <h5>@item.ProductName</h5>
+                            <div class="mb-4">@item.ProductDesciption</div>
+                            <span>
+                                Price : <b>@item.Price.ToString("C")</b>
+                            </span>
+                            <div class="md-4">
+                                <MudNumericField @bind-Value="@item.Qty" Label="Qty" Variant="Variant.Text" Min="0" Max="100"/>
+                                <MudIconButton class="update-qty" Icon="@Icons.Material.Filled.Update" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" @onclick="(async () => {await UpdateCartItemQty_Click(item.Id, item.Qty);Snackbar.Add(Result.Message, Severity.Info);})"/>
+                                <MudIconButton Icon="@Icons.Material.Filled.Delete" Variant="Variant.Filled" Color="Color.Error" Size="Size.Large" @onclick="(async () => {await DeleteCartItem_Click(item.Id);Snackbar.Add(Result.Message, Severity.Success);})"/>
+                            </div>
+
+                        </div>
+                        <MudDivider DividerType="DividerType.Middle" Class="my-6"/>
+
+
+                    </div>
+                }
+            </div>
+            <div class="col-md-3">
+                <h5>Cart Summarry</h5>
+                <div class="mt-2">
+                    <div>Total (@TotalQuantity)&nbsp;<b>@TotalPrice</b></div>
+                    <a href="#" class="btn btn-success">
+                        <span class="oi oi-credit-card"></span>&nbsp; Proceed to Checkout
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">Sepete ürün bulunamadı</MudAlert>
+    }
+}

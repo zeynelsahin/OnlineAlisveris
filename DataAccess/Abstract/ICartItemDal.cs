@@ -13,4 +13,5 @@ public interface ICartItemDal: IEntityRepository<CartItem>
     Task<CartItem> GetByIdAsync(int id);
     Task<IEnumerable<CartItemDto>> GetCartItemProductsAsync();
     Task<IEnumerable<CartItemDto>> GetCartItemProductsByCartIdAsync(int cartId);
+    Task<IEnumerable<CartItemDto>> GetCartItemProductByUserIdAsync(int userId);
 }
