@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YF0vHKl8vU/b6vPu3ogTwHPH6W/8yiiytCMt8GlZaJyEdJ2gcT6mZumVli9CY77gGOp7wIs5kqWdUlFKIKpp0w==",
+  "dgSpecHash": "lsqwM7NEfIjFeYGy1wOBIvxCy1sGDLdSVA1ZhmY7NKmYf1j0BxtmUXwzLcTvevLqYZgUvfRi3/P7yYmvNn3Teg==",
   "success": true,
   "projectFilePath": "C:\\Users\\zynls\\Masaüstü\\OnlineAlisveris\\OnlineAlisveris.Web\\OnlineAlisveris.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zynls\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
+    "C:\\Users\\zynls\\.nuget\\packages\\blazored.fluentvalidation\\2.1.0-preview.1\\blazored.fluentvalidation.2.1.0-preview.1.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
     "C:\\Users\\zynls\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.4\\microsoft.aspnetcore.authorization.6.0.4.nupkg.sha512",

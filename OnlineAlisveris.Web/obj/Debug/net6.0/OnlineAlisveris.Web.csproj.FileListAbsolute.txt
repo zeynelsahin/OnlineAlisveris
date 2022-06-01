@@ -1965,3 +1965,7 @@ C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\w
 C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\MudBlazor.dll
 C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\build-gz\VS9xOC5a.gz
 C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\wwwroot\_framework\Blazored.FluentValidation.dll
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\wwwroot\_framework\Blazored.FluentValidation.dll.gz
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\bin\Debug\net6.0\Blazored.FluentValidation.dll
+C:\Users\zynls\Masaüstü\OnlineAlisveris\OnlineAlisveris.Web\obj\Debug\net6.0\build-gz\djJZvzGx.gz

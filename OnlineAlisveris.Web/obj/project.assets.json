@@ -40,6 +40,19 @@
           "lib/netstandard2.1/Autofac.Extras.DynamicProxy.dll": {}
         }
       },
+      "Blazored.FluentValidation/2.1.0-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        }
+      },
       "Castle.Core/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -2429,6 +2442,19 @@
           "lib/netstandard2.1/Autofac.Extras.DynamicProxy.dll": {}
         }
       },
+      "Blazored.FluentValidation/2.1.0-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        }
+      },
       "Castle.Core/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -4755,6 +4781,19 @@
         "lib/netstandard2.0/Autofac.Extras.DynamicProxy.xml",
         "lib/netstandard2.1/Autofac.Extras.DynamicProxy.dll",
         "lib/netstandard2.1/Autofac.Extras.DynamicProxy.xml"
+      ]
+    },
+    "Blazored.FluentValidation/2.1.0-preview.1": {
+      "sha512": "F5+Rn/Y+RCHiZAMx7jg8fKQ6An8qW5WTFf9zOfp+vMmNQGgJZDRzMtxWlZDYistg/uSEf+fxVkrskpWw6enD6Q==",
+      "type": "package",
+      "path": "blazored.fluentvalidation/2.1.0-preview.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.fluentvalidation.2.1.0-preview.1.nupkg.sha512",
+        "blazored.fluentvalidation.nuspec",
+        "icon.png",
+        "lib/net6.0/Blazored.FluentValidation.dll"
       ]
     },
     "Castle.Core/4.4.0": {
@@ -10697,6 +10736,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Blazored.FluentValidation >= 2.1.0-preview.1",
       "Business >= 1.0.0",
       "Core >= 1.0.0",
       "Entities >= 1.0.0",
@@ -10759,6 +10799,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Blazored.FluentValidation": {
+            "target": "Package",
+            "version": "[2.1.0-preview.1, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[6.0.4, )"

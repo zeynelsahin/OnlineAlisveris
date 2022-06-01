@@ -17,7 +17,7 @@ public class ProductCategoriesController : Controller
     }
 
     [HttpGet("GetAll")]
-    public async Task<IDataResult<List<ProductCategory>>> GetAll()
+    public async Task<IDataResult<IEnumerable<ProductCategory>>> GetAll()
     {
         var categories = await _productCategoryService.GetAll();
         return categories;

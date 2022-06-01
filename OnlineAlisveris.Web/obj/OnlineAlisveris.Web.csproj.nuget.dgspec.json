@@ -368,6 +368,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Blazored.FluentValidation": {
+              "target": "Package",
+              "version": "[2.1.0-preview.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[6.0.4, )"

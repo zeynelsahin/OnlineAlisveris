@@ -7,6 +7,8 @@ using MudBlazor.Services;
 using OnlineAlisveris.Web;
 
 using OnlineAlisveris.Web.Services;
+using OnlineAlisveris.Web.Services.Abstract;
+using OnlineAlisveris.Web.Services.Concreate;
 using OnlineAlisveris.Web.Services.Contracts;
 using IProductService = OnlineAlisveris.Web.Services.Contracts.IProductService;
 
@@ -17,6 +19,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7203/") });
  builder.Services.AddScoped<IProductService,ProductService>();
  builder.Services.AddScoped<ICartItemService,CartItemService>();
+ builder.Services.AddScoped<IProductCategoryService,ProductCategoryService>();
 
 //MudBlazor
 builder.Services.AddMudServices(configuration =>

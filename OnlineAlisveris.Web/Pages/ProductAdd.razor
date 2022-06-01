@@ -1,7 +1,146 @@
-﻿@page "/ProductAdd"
+﻿@using FluentValidation
+@using Severity = MudBlazor.Severity
+@page "/productAdd"
+<MudForm Model="@model" @ref="@form" Validation="@(productValidator.ValidateValue)" ValidationDelay="0">
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <div class="d-flex justify-center">
+                <MudImage ObjectFit="ObjectFit.Contain" Height="300" Src="/Images/Kategorisiz/KankamYılan.jpg" Alt="Kankam Yılan" Elevation="25" Class="rounded-lg justify-center"/>
 
-<h3>ProductAdd</h3>
+            </div>
+
+            <MudAutocomplete T="string" Label="US States" @bind-Value="value1" SearchFunc="@Search1"
+                             ResetValueOnEmptyText="@resetValueOnEmptyText"
+                             CoerceText="@coerceText" CoerceValue="@coerceValue"/>
+            <MudTextField @bind-Value="model.Name"
+                          For="@(() => model.Name)"
+                          Immediate="true"
+                          Label="Name"/>
+            <MudTextField @bind-Value="model.Description"
+                          For="@(() => model.Description)"
+                          Immediate="true"
+                          Label="Description"/>
+
+            <MudTextField @bind-Value="model.Price"
+                          For="@(() => model.Price)"
+                          Immediate="true"
+                          Label="Price"/>
+            <MudTextField @bind-Value="model.Qty"
+                          For="@(() => model.Qty)"
+                          Immediate="true"
+                          Label="Qty"/>
+            <MudTextField @bind-Value="model.CategoryId"
+                          For="@(() => model.CategoryId)"
+                          Immediate="true"
+                          Label="Category"/>
+        </MudItem>
+
+
+    </MudGrid>
+
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="@(async () => await Submit())">Order</MudButton>
+
+</MudForm>
+
 
 @code {
-    
+
+
+    // AutoComplete 
+    private bool resetValueOnEmptyText;
+    private bool coerceText;
+    private bool coerceValue;
+    private string value1, value2;
+
+    private string[] states =
+    {
+        "Alabama", "Alaska", "American Samoa", "Arizona",
+        "Arkansas", "California", "Colorado", "Connecticut",
+        "Delaware", "District of Columbia", "Federated States of Micronesia",
+        "Florida", "Georgia", "Guam", "Hawaii", "Idaho",
+        "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
+        "Louisiana", "Maine", "Marshall Islands", "Maryland",
+        "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+        "Missouri", "Montana", "Nebraska", "Nevada",
+        "New Hampshire", "New Jersey", "New Mexico", "New York",
+        "North Carolina", "North Dakota", "Northern Mariana Islands", "Ohio",
+        "Oklahoma", "Oregon", "Palau", "Pennsylvania", "Puerto Rico",
+        "Rhode Island", "South Carolina", "South Dakota", "Tennessee",
+        "Texas", "Utah", "Vermont", "Virgin Island", "Virginia",
+        "Washington", "West Virginia", "Wisconsin", "Wyoming",
+    };
+
+    private async Task<IEnumerable<string>> Search1(string value)
+    {
+    // In real life use an asynchronous function for fetching data from an api.
+        await Task.Delay(5);
+
+    // if text is null or empty, show complete list
+        if (string.IsNullOrEmpty(value))
+            return states;
+        return states.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+    }
+
+    private async Task<IEnumerable<string>> Search2(string value)
+    {
+    // In real life use an asynchronous function for fetching data from an api.
+        await Task.Delay(5);
+
+    // if text is null or empty, don't return values (drop-down will not open)
+        if (string.IsNullOrEmpty(value))
+            return new string[0];
+        return states.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+    }
+
+    [Inject]
+    ISnackbar Snackbar { get; set; }
+
+    MudForm form;
+
+    ProductFluentValidator productValidator = new ProductFluentValidator();
+
+    Product model = new Product();
+
+    public class Product
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string ImageURL { get; set; }
+        public decimal Price { get; set; }
+        public int Qty { get; set; }
+        public int CategoryId { get; set; }
+    }
+
+    private async Task Submit()
+    {
+        await form.Validate();
+
+        if (form.IsValid)
+        {
+            Snackbar.Add("Doğrulandı!");
+        }
+    }
+
+    /// <summary>
+    /// A standard AbstractValidator which contains multiple rules and can be shared with the back end API
+    /// </summary>
+    /// <typeparam name="OrderModel"></typeparam>
+    public class ProductFluentValidator : AbstractValidator<Product>
+    {
+        public ProductFluentValidator()
+        {
+            RuleFor(x => x.Name)
+                .NotEmpty()
+                .Length(1, 100);
+        }
+
+        public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>
+        {
+            var result = await ValidateAsync(ValidationContext<Product>.CreateWithOptions((Product)model, x => x.IncludeProperties(propertyName)));
+            if (result.IsValid)
+                return Array.Empty<string>();
+            return result.Errors.Select(e => e.ErrorMessage);
+        };
+    }
+
 }

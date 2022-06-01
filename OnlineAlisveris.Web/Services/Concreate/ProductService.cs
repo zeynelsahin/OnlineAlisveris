@@ -3,7 +3,7 @@ using Entities.Dtos;
 using OnlineAlisveris.Web.Services.Contracts;
 using OnlineAlisveris.Web.Services.Models;
 
-namespace OnlineAlisveris.Web.Services;
+namespace OnlineAlisveris.Web.Services.Concreate;
 
 public class ProductService : IProductService
 {

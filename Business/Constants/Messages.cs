@@ -80,4 +80,7 @@ public static class Messages
         public static string CartItemDeleted="Sepet içeriği silindi";
         public static string CartItemUpdated= "Sepet güncellendi";
         public static string ErrorCartItemUpdated="Sepet içeriği güncellenemedi";
+        
+        
+        public static string FileNotAdded="Dosya eklemediniz";
 }
